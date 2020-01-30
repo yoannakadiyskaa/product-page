@@ -1,0 +1,326 @@
+@import 'constants';
+
+body {
+    background-color: #f5f5f5;
+    font-family:  'Oswald', sans-serif;
+}
+
+.product-description-section {
+    .product-rating-wrapper {
+        margin: 1rem 0;
+
+        .checked {
+            color: #f5ce04;
+        }
+        .product-rating {
+            margin-right: 0.6rem;
+        }
+        .product-checkout-count {
+            text-decoration: underline;
+        }
+
+        .product-checkout-count-wrapper {
+            color: $gray-color;
+        }
+    
+        .fa-star { 
+            margin-right: 6px;
+        }    
+    }
+
+    .product-review-wrapper {
+        font-size: 0.75rem;
+    }
+
+    .product-field {
+        font-size: 0.75rem;
+        span {
+            color: $gray-color;
+            
+        }
+    }
+    .product-title {
+        color: #3e3e3e;
+        font-weight: 500;
+    }
+    
+    .fa-comment-dots {
+        font-size: 1.5rem;
+        vertical-align: bottom;
+        margin: 0 0.5rem;
+    }
+    .social-interactions {
+        font-size: 3rem;
+        i {
+            margin-right: 0.5rem;
+            font-size: inherit;
+            &.fa-facebook-square {
+                color: #4f71bb;
+            }
+            &.fa-share-alt-square {
+                color: #dc0514;
+            }
+        }
+
+        div {
+            display: inline-block;
+            color: $gray-color;
+
+            span {
+                display: block;
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+.carousel-section {
+    padding: 0 4rem;
+    .carousel-inner {
+        margin: auto;
+    }
+    .carousel-control-prev {
+        margin-left: -75px;
+        opacity: 1;
+    }
+  
+    .carousel-control-next {
+        margin-right: -75px;
+        opacity: 1;
+    }
+    .fas {
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 0.65rem;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+.checkout-section {
+    .checkout-item-counter {
+        border: 2px solid black;
+        display: inline-block;
+
+        div {
+            display: inherit;
+            margin: 5px 10px;
+        }
+    }
+    .buy-now-button {
+        background-color: $red-color;
+        color: white;
+        padding: 6px 30px;
+        float: right;
+        cursor: pointer;
+
+    }
+    .add-in-favourite {
+        border: 1px solid black;
+        margin: 15px 0;
+        padding: 5px 0;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+
+        span {
+            margin: 8px;
+        }
+        .far {
+            color: blue;
+            font-size: 1.5rem;
+        }
+    }
+    .special-offer {
+        border: 1px solid black;
+        padding: 12px;
+        font-size: 0.75rem;
+        .send-offer {
+            border: 1px solid black;
+            margin: 8px 0px;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+    .price {
+        font-size: 30px;
+        color: $red-color;
+        float:right;
+    }
+    .old-price {
+        float:left;
+        font-size: 20px;
+        color: $gray-color;
+        position: relative;
+        &::before {
+            content: '';
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+
+            border-bottom: 2px solid $gray-color;
+            -webkit-transform: skewY(-10deg);
+            transform: skewY(-10deg);
+        }
+    }
+    .save-money {
+        text-align: right;
+    }
+}
+
+.carousel-promo {
+    // height: 25rem;
+    border: 1px dashed $gray-color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .take-stack-wrapper {
+        font-size: 0.75rem;
+        .take-indicator {
+            background-color: $dark-gray-color;
+            color: white;
+            padding: 5px 10px;
+        }
+    }
+
+    .stack-title {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .stack-content-description {
+        font-size: 0.75rem;
+
+        span {
+            color: $red-color;
+        }
+    }
+    .opti-men-pill-box-image {
+        height: 10rem;
+        margin: auto;
+    }
+
+    .carousel-promo-item-title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .carousel-control-prev {
+        margin-left: -10rem;
+        opacity: 1;
+    }
+  
+    .carousel-control-next {
+        margin-right: -10rem;
+        opacity: 1;
+    }
+
+    .fa-arrow-left, .fa-arrow-right {
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 0.65rem;
+    }
+
+    .carousel-promo-price {
+        line-height: 1rem;
+        text-align: center;
+
+        .price {
+            color: $red-color;
+        }
+        .old-price {
+            color: $gray-color;
+            font-size: 0.7rem;
+            vertical-align: top;
+            
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: '';
+                width: 100%;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                
+                border-bottom: 2px solid $gray-color;
+                -webkit-transform: skewY(-10deg);
+                transform: skewY(-10deg);
+            }
+        }
+    }
+}
+
+.banner {
+    height: 8rem;
+    background-color: #383838;
+    text-align: center;
+    line-height: 8rem;
+    text-align: center;
+
+    .banner-text {
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        text-transform: uppercase;
+        font-family: "Arial";
+        font-weight: 700;
+    }
+}
+
+.info-tabs-container {
+    margin-top: 2.5rem;
+    .tabs {
+        margin: 0 auto;
+    }
+    i {
+        color: #28b904;
+    }
+    #tab-button {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        max-width: 100rem;
+        margin: 0 auto;
+        padding: 0 15px;
+        list-style: none;
+
+        li {
+            display: table-cell;
+            text-transform: uppercase;
+            min-width: 18%;
+            a {
+                display: block;
+                padding: .5em;
+                border: 3px solid #f0f0f0;
+                text-align: center;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    
+        li a:hover,
+        .is-active a {
+            border-bottom-color: transparent;
+            background: #f0f0f0;
+        }
+    }
+    .tab-contents {
+        padding: .5em 2em 1em;  
+        position: relative;
+        background: #f0f0f0;
+        top: -1px;
+        padding: 3.5rem 24rem;
+    }
+    .tab-button-outer {
+        position: relative;
+        z-index: 2;
+        display: block;
+    }
+}
